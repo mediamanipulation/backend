@@ -1,74 +1,198 @@
-# Node.js Express and SQLite API
+<a href="http://fvcproductions.com"><img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions"></a>
 
-This project is a scalable and maintainable Node.js application using Express and SQLite. It's designed to provide a RESTful API for a books inventory system, allowing for operations such as creating, reading, updating, and deleting book entries.
+<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
-## Features
+***INSERT GRAPHIC HERE (include hyperlink in image)***
 
-- RESTful API endpoints for managing books.
-- SQLite database integration for persistent storage.
-- Modular architecture for improved scalability and maintainability.
-- Includes CORS middleware for cross-origin requests.
-- Uses modern async/await syntax for database operations.
+# Repository Title Goes Here
 
-## Prerequisites
+> Subtitle or Short Description Goes Here
 
-Before you begin, ensure you have met the following requirements:
+> ideally one sentence
 
-- Node.js (v12.x or higher recommended)
-- npm or Yarn as your package manager
+> include terms/tags that can be searched
+
+**Badges will go here**
+
+- build status
+- issues (waffle.io maybe)
+- devDependencies
+- npm package
+- coverage
+- slack
+- downloads
+- gitter chat
+- license
+- etc.
+
+[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![Code Climate](http://img.shields.io/codeclimate/github/badges/badgerbadgerbadger.svg?style=flat-square)](https://codeclimate.com/github/badges/badgerbadgerbadger) [![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/pulls) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
+
+- For more on these wonderful ~~badgers~~ badges, refer to <a href="http://badges.github.io/badgerbadgerbadger/" target="_blank">`badgerbadgerbadger`</a>.
+
+***INSERT ANOTHER GRAPHIC HERE***
+
+[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
+
+- Most people will glance at your `README`, *maybe* star it, and leave
+- Ergo, people should understand instantly what your project is about based on your repo
+
+> Tips
+
+- HAVE WHITE SPACE
+- MAKE IT PRETTY
+- GIFS ARE REALLY COOL
+
+> GIF Tools
+
+- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
+- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
+
+**Recordit**
+
+![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
+
+**ttystudio**
+
+![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
+
+---
+
+## Table of Contents (Optional)
+
+> If your `README` has a lot of info, section headers might be nice.
+
+- [Installation](#installation)
+- [Features](#features)
+- [Contributing](#contributing)
+- [Team](#team)
+- [FAQ](#faq)
+- [Support](#support)
+- [License](#license)
+
+
+---
+
+## Example (Optional)
+
+```javascript
+// code away!
+
+let generateProject = project => {
+  let code = [];
+  for (let js = 0; js < project.length; js++) {
+    code.push(js);
+  }
+};
+```
+
+---
 
 ## Installation
 
-To install the application, follow these steps:
+- All the `code` required to get started
+- Images of what it should look like
 
-1. Clone the repository to your local machine:
+### Clone
 
-   ```bash
-   git clone https://your-repository-url.git
-   cd your-app-name
+- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
 
-   Install the necessary dependencies:
+### Setup
 
-bash
-Copy code
-npm install
-or if you use Yarn:
+- If you want more syntax highlighting, format your code like this:
 
-bash
-Copy code
-yarn install
+> update and install this package first
 
-## Configuration
-Database Setup: The application uses SQLite, and the database file is expected to be located at ./database.sqlite. Ensure this file exists or is generated through the application setup process.
-Environment Variables: No environment variables are required for the basic setup. However, you can customize the port and other settings by modifying the src/index.js file.
+```shell
+$ brew update
+$ brew install fvcproductions
+```
 
-## Running the Application
-To run the application, execute:
-npm start
-or with Yarn:
-yarn start
+> now install npm and bower packages
 
-This will start the application on the default port 8800. Access the API at http://localhost:8800/.
+```shell
+$ npm install
+$ bower install
+```
 
-## API Endpoints
-The application supports the following API endpoints:
+- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
 
-GET /books: Retrieves a list of all books.
-POST /books: Adds a new book. Requires title, desc, price, and cover in the request body.
-GET /books/:id: Retrieves a book by its ID.
-PUT /books/:id: Updates a book by its ID. Requires any of title, desc, price, and cover in the request body.
-DELETE /books/:id: Deletes a book by its ID.
+---
 
-## Project Structure
-The application follows a modular structure for ease of management:
+## Features
+## Usage (Optional)
+## Documentation (Optional)
+## Tests (Optional)
 
-src/: Source files for the application.
-api/: API route definitions.
-config/: Configuration files, including Express setup.
-db/: Database setup and operations.
-index.js: Entry point of the application.
-Contributing
-Contributions to the project are welcome. Please follow the standard fork and pull request workflow.
+- Going into more detail on code and technologies used
+- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
+
+---
+
+## Contributing
+
+> To get started...
+
+### Step 1
+
+- **Option 1**
+    - 🍴 Fork this repo!
+
+- **Option 2**
+    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
+
+### Step 2
+
+- **HACK AWAY!** 🔨🔨🔨
+
+### Step 3
+
+- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
+
+---
+
+## Team
+
+> Or Contributors/People
+
+| <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> |
+| :---: |:---:| :---:|
+| [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)    | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)  |
+| <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> |
+
+- You can just grab their GitHub profile image URL
+- You should probably resize their picture using `?s=200` at the end of the image URL.
+
+---
+
+## FAQ
+
+- **How do I do *specifically* so and so?**
+    - No problem! Just do this.
+
+---
+
+## Support
+
+Reach out to me at one of the following places!
+
+- Website at <a href="http://fvcproductions.com" target="_blank">`fvcproductions.com`</a>
+- Twitter at <a href="http://twitter.com/fvcproductions" target="_blank">`@fvcproductions`</a>
+- Insert more social links here.
+
+---
+
+## Donations (Optional)
+
+- You could include a <a href="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png" target="_blank">Gratipay</a> link as well.
+
+[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png)](https://gratipay.com/fvcproductions/)
+
+
+---
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
