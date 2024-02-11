@@ -28,10 +28,15 @@ To install the application, follow these steps:
    cd your-app-name
 
 
-## Usage
+## Install the necessary dependencies:
 
 ```
 npm install
+```
+## or if you use Yarn:
+
+```
+yarn install
 ```
 
 ## Contributing
