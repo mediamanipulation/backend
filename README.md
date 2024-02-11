@@ -24,8 +24,8 @@ To install the application, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://your-repository-url.git
-   cd your-app-name
+   git clone https://github.com/mediamanipulation/backend.git
+   cd backend
 
 
 ## Install the necessary dependencies:
