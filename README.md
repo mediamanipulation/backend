@@ -44,3 +44,31 @@ Environment Variables: No environment variables are required for the basic setup
 
 ## Running the Application
 To run the application, execute:
+npm start
+or with Yarn:
+yarn start
+
+This will start the application on the default port 8800. Access the API at http://localhost:8800/.
+
+## API Endpoints
+The application supports the following API endpoints:
+
+GET /books: Retrieves a list of all books.
+POST /books: Adds a new book. Requires title, desc, price, and cover in the request body.
+GET /books/:id: Retrieves a book by its ID.
+PUT /books/:id: Updates a book by its ID. Requires any of title, desc, price, and cover in the request body.
+DELETE /books/:id: Deletes a book by its ID.
+
+## Project Structure
+The application follows a modular structure for ease of management:
+
+src/: Source files for the application.
+api/: API route definitions.
+config/: Configuration files, including Express setup.
+db/: Database setup and operations.
+index.js: Entry point of the application.
+Contributing
+Contributions to the project are welcome. Please follow the standard fork and pull request workflow.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
