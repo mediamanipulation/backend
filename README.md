@@ -26,7 +26,8 @@ To install the application, follow these steps:
    ```bash
    git clone https://your-repository-url.git
    cd your-app-name
-Install the necessary dependencies:
+
+   Install the necessary dependencies:
 
 bash
 Copy code
@@ -36,53 +37,10 @@ or if you use Yarn:
 bash
 Copy code
 yarn install
-Configuration
+
+## Configuration
 Database Setup: The application uses SQLite, and the database file is expected to be located at ./database.sqlite. Ensure this file exists or is generated through the application setup process.
 Environment Variables: No environment variables are required for the basic setup. However, you can customize the port and other settings by modifying the src/index.js file.
-Running the Application
+
+##Running the Application
 To run the application, execute:
-
-bash
-Copy code
-npm start
-or with Yarn:
-
-bash
-Copy code
-yarn start
-This will start the application on the default port 8800. Access the API at http://localhost:8800/.
-
-API Endpoints
-The application supports the following API endpoints:
-
-GET /books: Retrieves a list of all books.
-POST /books: Adds a new book. Requires title, desc, price, and cover in the request body.
-GET /books/:id: Retrieves a book by its ID.
-PUT /books/:id: Updates a book by its ID. Requires any of title, desc, price, and cover in the request body.
-DELETE /books/:id: Deletes a book by its ID.
-Project Structure
-The application follows a modular structure for ease of management:
-
-src/: Source files for the application.
-api/: API route definitions.
-config/: Configuration files, including Express setup.
-db/: Database setup and operations.
-index.js: Entry point of the application.
-Contributing
-Contributions to the project are welcome. Please follow the standard fork and pull request workflow.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-vbnet
-Copy code
-
-### Notes for Customization:
-
-- Replace `https://your-repository-url.git` with the actual URL of your Git repository.
-- If your application or setup process differs from what's outlined here, adjust the steps and sections accordingly.
-- Remember to add any specific configurations or setup details that are unique to your project to help others get started easily.
-
-
-
-
