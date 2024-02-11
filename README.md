@@ -42,5 +42,5 @@ yarn install
 Database Setup: The application uses SQLite, and the database file is expected to be located at ./database.sqlite. Ensure this file exists or is generated through the application setup process.
 Environment Variables: No environment variables are required for the basic setup. However, you can customize the port and other settings by modifying the src/index.js file.
 
-##Running the Application
+## Running the Application
 To run the application, execute:
