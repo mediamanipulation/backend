@@ -39,12 +39,18 @@ npm install
 yarn install
 ```
 
-## Contributing
+## Configuration
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+### Database Setup
+The application uses SQLite, and the database file is expected to be located at `./database.sqlite`. Ensure this file exists or is generated through the application setup process.
 
-Please make sure to update tests as appropriate.
+### Environment Variables
+No environment variables are required for the basic setup. However, you can customize the port and other settings by modifying the `src/index.js` file.
+
+## Running the Application
+
+To run the application, execute:
+
 
 ## License
 
