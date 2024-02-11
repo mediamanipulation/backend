@@ -30,7 +30,8 @@ To install the application, follow these steps:
 
 ## Usage
 
-```npm install
+```
+npm install
 ```
 
 ## Contributing
