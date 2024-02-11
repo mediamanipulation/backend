@@ -44,6 +44,7 @@ yarn install
 ### Database Setup
 The application uses SQLite, and the database file is expected to be located at `./database.sqlite`. Ensure this file exists or is generated through the application setup process.
 
+in the src/index.js uncomment - await setupDatabase(); and await insertMockData(); -  to install db and comment back out after running once.
 ```
 async function main() {
  // await setupDatabase(); // Uncomment if needed
