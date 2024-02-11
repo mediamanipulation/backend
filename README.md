@@ -44,6 +44,15 @@ yarn install
 ### Database Setup
 The application uses SQLite, and the database file is expected to be located at `./database.sqlite`. Ensure this file exists or is generated through the application setup process.
 
+```
+async function main() {
+ // await setupDatabase(); // Uncomment if needed
+ //  await insertMockData(); // Uncomment if needed
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
+
+```
+
 ### Environment Variables
 No environment variables are required for the basic setup. However, you can customize the port and other settings by modifying the `src/index.js` file.
 
