@@ -75,7 +75,39 @@ Get a Single Book by ID
 - Description: Retrieves details of a specific book by its ID.
 -  Parameters:
   -- id (URL parameter) - The ID of the book.
- -- Response: A single book object if found, or an error message if not found.
+ - Response: A single book object if found, or an error message if not found.
+
+Create a New Book
+-  Endpoint: POST /api/books
+-  Description: Adds a new book to the collection.
+-  Body Parameters:
+  --  title - The title of the book.
+  -- desc - A short description of the book.
+  -- price - The price of the book.
+  -- cover - A URL to an image of the book's cover.
+  - Response: The ID of the newly created book.
+
+Update a Book
+- Endpoint: PUT /api/books/:id
+- Description: Updates the details of an existing book.
+- Parameters:
+  --  id (URL parameter) - The ID of the book to update.
+- Body Parameters:
+  --  title - The new title of the book.
+  --  desc - The new description of the book.
+  --  price - The new price of the book.
+  --  cover - The new cover image URL of the book.
+- Response: A success message if the book is updated, or an error message if the book is not found.
+
+ Delete a Book
+- Endpoint: DELETE /api/books/:id
+- Description: Removes a book from the collection.
+- Parameters:
+  --  id (URL parameter) - The ID of the book to delete.
+- Response: A success message if the book is deleted, or an error message if the book is not found.
+- 
+Error Handling
+- All endpoints include basic error handling, responding with an appropriate status code and error message in case of failure.
 
 ## License
 
