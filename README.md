@@ -65,20 +65,19 @@ npm start
 
 ```
 # Endpoints
-
- Get All Books
+##### Get All Books 
 - Endpoint: GET /api/books
 - Description: Retrieves a list of all books.
 - Response: An array of books.
 
-Get a Single Book by ID
+ ##### Get a Single Book by ID
 - Endpoint: GET /api/books/:id
 - Description: Retrieves details of a specific book by its ID.
 -  Parameters:
   -- id (URL parameter) - The ID of the book.
  - Response: A single book object if found, or an error message if not found.
 
-Create a New Book
+ ##### Create a New Book
 -  Endpoint: POST /api/books
 -  Description: Adds a new book to the collection.
 -  Body Parameters:
@@ -88,7 +87,7 @@ Create a New Book
   -- cover - A URL to an image of the book's cover.
   - Response: The ID of the newly created book.
 
-Update a Book
+ ##### Update a Book
 - Endpoint: PUT /api/books/:id
 - Description: Updates the details of an existing book.
 - Parameters:
@@ -100,14 +99,14 @@ Update a Book
   --  cover - The new cover image URL of the book.
 - Response: A success message if the book is updated, or an error message if the book is not found.
 
- Delete a Book
+ ##### Delete a Book
 - Endpoint: DELETE /api/books/:id
 - Description: Removes a book from the collection.
 - Parameters:
   --  id (URL parameter) - The ID of the book to delete.
 - Response: A success message if the book is deleted, or an error message if the book is not found.
 - 
-Error Handling
+ ##### Error Handling
 - All endpoints include basic error handling, responding with an appropriate status code and error message in case of failure.
 
 ## License
