@@ -109,6 +109,72 @@ npm start
  ##### Error Handling
 - All endpoints include basic error handling, responding with an appropriate status code and error message in case of failure.
 
+# Directory Structure Generator 
+
+This Node.js script recursively generates the directory structure of a given base path and writes the structure to a text file. The script is designed to skip the `node_modules` directory, making it particularly useful for Node.js projects.
+
+## Features
+
+- **Recursive Directory Traversal**: Recursively navigates through directories starting from a base path.
+- **Skips `node_modules`**: Ignores the `node_modules` directory to avoid cluttering the output with dependency files.
+- **Asynchronous File Operations**: Utilizes the `fs.promises` API for asynchronous file reading and writing, improving performance for large directories.
+- **Customizable Base Path**: Allows specifying a starting directory from which to generate the structure.
+
+## How It Works
+
+### Setup
+
+The script requires Node.js's `fs` and `path` modules to work with the filesystem and handle path operations.
+
+### `getDirectoryStructure` Function
+
+This is a recursive asynchronous function that builds the directory structure. It takes two arguments:
+
+- `basePath`: The starting directory path.
+- `relativePath`: Used internally to track the current path relative to the `basePath`.
+
+### Skipping `node_modules`
+
+If the script encounters a directory named `node_modules`, it skips it to avoid listing project dependencies.
+
+### Writing to a File
+
+The `writeDirectoryStructureToFile` function takes the generated directory structure and writes it to a specified file, defaulting to `folderStructure.txt`.
+
+## Usage
+
+### Prerequisites
+
+Ensure you have Node.js installed on your system.
+
+### Script Execution
+
+Run the script using Node.js. The output will be a file named `folderStructure.txt` (or another specified filename) containing the directory structure.
+
+### Customization
+
+Modify the `basePath` in the `writeDirectoryStructureToFile` function to point to the directory you wish to analyze.
+
+## Code Snippet
+
+```javascript
+const fs = require('fs').promises;
+const path = require('path');
+
+// Recursive function to get the directory structure
+async function getDirectoryStructure(basePath, relativePath = '') {
+  // Code omitted for brevity
+}
+
+// Writes the directory structure to a text file
+async function writeDirectoryStructureToFile(outputFilePath) {
+  // Code omitted for brevity
+}
+
+// Execute the function and write the structure to 'folderStructure.txt'
+writeDirectoryStructureToFile('folderStructure.txt');
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
