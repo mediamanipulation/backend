@@ -157,7 +157,7 @@ Modify the `basePath` in the `writeDirectoryStructureToFile` function to point t
 
 ## Code Snippet
 
-```javascript
+``` javascript
 const fs = require('fs').promises;
 const path = require('path');
 
@@ -174,6 +174,11 @@ async function writeDirectoryStructureToFile(outputFilePath) {
 // Execute the function and write the structure to 'folderStructure.txt'
 writeDirectoryStructureToFile('folderStructure.txt');
 
+```
+
+```
+node createStructure.cjs
+```
 
 ## License
 
