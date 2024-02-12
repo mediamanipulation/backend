@@ -5,6 +5,7 @@ const app = createApp();
 const PORT = 8800;
 
 async function main() {
+  // database setup and population
 // await setupDatabase(); // Uncomment if needed
 // await insertMockData(); // Uncomment if needed
   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

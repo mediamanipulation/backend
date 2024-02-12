@@ -1,0 +1,8 @@
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#0078D4", // A bright, engaging blue for active windows
+        "titleBar.activeForeground": "#FFFFFF", // White text for contrast
+        "titleBar.inactiveBackground": "#4A90E2", // A slightly lighter blue for inactive windows
+        "titleBar.inactiveForeground": "#D0D0D0" // A soft gray for inactive text, ensuring readability
+    }
+}
