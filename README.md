@@ -109,7 +109,7 @@ npm start
  ##### Error Handling
 - All endpoints include basic error handling, responding with an appropriate status code and error message in case of failure.
 
-# Directory Structure Generator 
+# Directory Structure Generator - createStructure.cjs
 
 This Node.js script recursively generates the directory structure of a given base path and writes the structure to a text file. The script is designed to skip the `node_modules` directory, making it particularly useful for Node.js projects.
 
