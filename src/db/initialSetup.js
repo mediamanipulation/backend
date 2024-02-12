@@ -23,7 +23,7 @@ async function insertMockData() {
   // Prepare mock data
   const mockData = [];
   for (let i = 1; i <= 20; i++) { // Adjusted to prevent duplicates if needed
-    mockData.push([`Book Title ${i}`, `Description of book ${i}`, 10.99 + i, `https://example.com/cover${i}.jpg`]);
+    mockData.push([`Book Title ${i}`, `Description of book ${i}`, 10.99 + i, `https://images.unsplash.com/photo-1707058665477-560297ffe913?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`]);
   }
 
   try {
