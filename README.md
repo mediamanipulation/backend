@@ -65,8 +65,8 @@ npm start
 
 ```
 # Endpoints
-<span style="color:blue">some *blue* text</span>.
- Get All Books
+
+ *Get All Books*
 - Endpoint: GET /api/books
 - Description: Retrieves a list of all books.
 - Response: An array of books.
