@@ -1,5 +1,5 @@
 import createApp from './config/express.js';
-//  import { setupDatabase, insertMockData } from './db/initialSetup.js';
+// import { setupDatabase, insertMockData } from './db/initialSetup.js';
 
 const app = createApp();
 const PORT = 8800;
